@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:backgroundTint="#FFFFFF"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/iv_item_menu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"
+            android:textColor="#191456"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/tv_item_menu"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

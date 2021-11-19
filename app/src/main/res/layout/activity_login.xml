@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:id="@+id/iv_logo_siswa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/siswa2" />
+
+    <TextView
+
+        android:id="@+id/tv_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_siswa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="SMK YPT KOTA TEGAL"
+        android:textColor="#191456"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_slogan"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/et_nis_siswa"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:textColor="#191456"
+            android:textColorHint="#191456"
+            android:hint="NIS"
+            android:inputType="number" />
+
+        <EditText
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="5dp"
+            android:layout_height="45dp"
+            android:textColor="#191456"
+            android:textColorHint="#191456"
+            android:id="@+id/et_pass_siswa"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:text="Tingkatan">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#191456"
+                    android:layout_height="wrap_content"
+                    android:text="Tingkatan" />
+                <Spinner
+                    android:entries="@array/tingkatan"
+                    android:id="@+id/sp_tingkatan"
+                    android:layout_weight="1"
+                    android:textColor="#191456"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#191456"
+                    android:layout_height="wrap_content"
+                    android:text="Tahun Ajaran" />
+                <Spinner
+                    android:entries="@array/tahunAjaran"
+                    android:id="@+id/sp_tahun_ajaran"
+                    android:layout_weight="1"
+                    android:textColor="#191456"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login_siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:onClick="login"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_bg"
+            android:text="login"
+            android:textColor="#ffff" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
